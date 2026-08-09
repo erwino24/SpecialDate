@@ -88,6 +88,7 @@ export const TicketStep: React.FC<TicketStepProps> = ({
 👗 Vibe: ${outfitMood}
 ${customNote ? `💬 Notes: "${customNote}"` : ''}
 
+Created with 💖 by Wino
 I can't wait for our date! 🥰💖`;
 
   const handleCopy = () => {
@@ -100,7 +101,6 @@ I can't wait for our date! 🥰💖`;
     navigator.clipboard.writeText(summaryText);
     setCopiedMessenger(true);
     setTimeout(() => setCopiedMessenger(false), 3000);
-    // Try opening Messenger app / web
     window.open('https://m.me', '_blank');
   };
 
@@ -108,7 +108,6 @@ I can't wait for our date! 🥰💖`;
     navigator.clipboard.writeText(summaryText);
     setCopiedMessenger(true);
     setTimeout(() => setCopiedMessenger(false), 3000);
-    // Open Instagram DMs
     window.open('https://instagram.com/direct/inbox/', '_blank');
   };
 
@@ -189,6 +188,11 @@ I can't wait for our date! 🥰💖`;
             </div>
           </div>
         )}
+
+        {/* Ticket Footer Credit */}
+        <div style={{ marginTop: '1.2rem', paddingTop: '0.8rem', borderTop: '1px dashed #ffccd5', textAlign: 'center', fontSize: '0.82rem', color: 'var(--text-muted)', fontWeight: 600 }}>
+          Created with 💖 by <span style={{ color: 'var(--primary-rose)', fontWeight: 800 }}>Wino</span>
+        </div>
       </div>
 
       {copiedMessenger && (

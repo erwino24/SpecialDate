@@ -29,7 +29,6 @@ export function App() {
 
   const toggleAudio = () => {
     if (!audioRef.current) {
-      // Gentle romantic melody URL or Web Audio synth fallback
       audioRef.current = new Audio('https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-piano-112199.mp3');
       audioRef.current.loop = true;
       audioRef.current.volume = 0.4;
@@ -129,6 +128,13 @@ export function App() {
           onReset={() => setStep(1)}
         />
       )}
+
+      {/* Created By Wino Footer */}
+      <footer style={{ marginTop: '1.5rem', textAlign: 'center', opacity: 0.85 }}>
+        <p style={{ fontSize: '0.88rem', fontWeight: 600, color: 'var(--text-muted)' }}>
+          Made with 💖 by <span style={{ color: 'var(--primary-rose)', fontWeight: 800 }}>Wino</span>
+        </p>
+      </footer>
     </main>
   );
 }
