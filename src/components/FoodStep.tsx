@@ -35,14 +35,14 @@ export const FoodStep: React.FC<FoodStepProps> = ({ selectedFoods, onToggleFood,
     <div className="glass-card">
       <div className="heart-badge">
         <Utensils size={16} />
-        <span>Step 1: Food & Treats</span>
+        <span>Step 1: Food & Treats (Optional)</span>
       </div>
 
       <h2 className="proposal-title font-playful" style={{ fontSize: '1.8rem' }}>
         What food are you craving? 🤤
       </h2>
       <p className="proposal-subtitle" style={{ marginBottom: '1rem' }}>
-        Pick as many as you want! I want to treat you to your favorites 💖
+        Pick as many as you want (or skip if you want me to surprise you)! 💖
       </p>
 
       <div className="cards-grid">
@@ -80,9 +80,8 @@ export const FoodStep: React.FC<FoodStepProps> = ({ selectedFoods, onToggleFood,
         <button 
           className="btn-primary" 
           onClick={onNext}
-          disabled={selectedFoods.length === 0}
         >
-          <span>Next: Pick Activities</span>
+          <span>{selectedFoods.length === 0 ? 'Skip for now & Next' : 'Next: Pick Activities'}</span>
           <ArrowRight size={18} />
         </button>
       </div>

@@ -148,28 +148,36 @@ I can't wait for our date! 🥰💖`;
         <div className="ticket-item">
           <div className="ticket-label">Food & Treats</div>
           <div className="ticket-tags">
-            {selectedFoods.map((id) => {
-              const item = FOOD_OPTIONS.find((f) => f.id === id);
-              return (
-                <span key={id} className="ticket-tag">
-                  {item?.title || id}
-                </span>
-              );
-            })}
+            {selectedFoods.length > 0 ? (
+              selectedFoods.map((id) => {
+                const item = FOOD_OPTIONS.find((f) => f.id === id);
+                return (
+                  <span key={id} className="ticket-tag">
+                    {item?.title || id}
+                  </span>
+                );
+              })
+            ) : (
+              <span className="ticket-tag">✨ Surprise Me / Food of your choice</span>
+            )}
           </div>
         </div>
 
         <div className="ticket-item">
           <div className="ticket-label">Date Activities</div>
           <div className="ticket-tags">
-            {selectedActivities.map((id) => {
-              const item = ACTIVITY_OPTIONS.find((a) => a.id === id);
-              return (
-                <span key={id} className="ticket-tag">
-                  {item?.title || id}
-                </span>
-              );
-            })}
+            {selectedActivities.length > 0 ? (
+              selectedActivities.map((id) => {
+                const item = ACTIVITY_OPTIONS.find((a) => a.id === id);
+                return (
+                  <span key={id} className="ticket-tag">
+                    {item?.title || id}
+                  </span>
+                );
+              })
+            ) : (
+              <span className="ticket-tag">💖 Cozy Chill & Hangout Together</span>
+            )}
           </div>
         </div>
 

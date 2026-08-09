@@ -46,14 +46,14 @@ export const ActivityStep: React.FC<ActivityStepProps> = ({
     <div className="glass-card">
       <div className="heart-badge">
         <Film size={16} />
-        <span>Step 2: Date Activities</span>
+        <span>Step 2: Date Activities (Optional)</span>
       </div>
 
       <h2 className="proposal-title font-playful" style={{ fontSize: '1.8rem' }}>
         What do you want us to do together? ✨
       </h2>
       <p className="proposal-subtitle" style={{ marginBottom: '1rem' }}>
-        Pick as many fun date ideas as you want! 💖
+        Pick as many fun date ideas as you want (or skip if you just want to eat & chill)! 💖
       </p>
 
       <div className="cards-grid">
@@ -91,9 +91,8 @@ export const ActivityStep: React.FC<ActivityStepProps> = ({
         <button 
           className="btn-primary" 
           onClick={onNext}
-          disabled={selectedActivities.length === 0}
         >
-          <span>Next: Choose Date & Time</span>
+          <span>{selectedActivities.length === 0 ? 'Skip for now & Next' : 'Next: Choose Date & Time'}</span>
           <ArrowRight size={18} />
         </button>
       </div>
