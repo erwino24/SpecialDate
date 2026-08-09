@@ -11,6 +11,8 @@ export interface ActivityOption {
 
 export const ACTIVITY_OPTIONS: ActivityOption[] = [
   { id: 'cinema', title: 'Cinema & Movie 🎬', emoji: '🎬', image: '/images/cinema.png', desc: 'Popcorn & movie date' },
+  { id: 'cooking', title: 'Cook Food Together 👨‍🍳', emoji: '👨‍🍳', desc: 'Cooking our favorite recipe' },
+  { id: 'pcgames', title: 'Play PC Games 🎮', emoji: '🎮', desc: 'Cozy gaming & PC games night' },
   { id: 'international', title: 'International Tour ✈️', emoji: '✈️', desc: 'Passport, flights & world trip' },
   { id: 'beach', title: 'Beach Getaway 🏖️', emoji: '🏖️', desc: 'Ocean breeze, sand & waves' },
   { id: 'nature', title: 'Nature Trip 🌿', emoji: '🌿', desc: 'Scenic nature walk & views' },
