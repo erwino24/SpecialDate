@@ -23,15 +23,16 @@ export function App() {
   const [outfitMood, setOutfitMood] = useState<string>('💖 Matchy Couple Outfits');
   const [customNote, setCustomNote] = useState<string>('');
 
-  // Audio state
+  // Audio state - Taylor Swift - Lover Piano/Romantic Instrumental
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const toggleAudio = () => {
     if (!audioRef.current) {
-      audioRef.current = new Audio('https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-piano-112199.mp3');
+      // High-quality romantic piano cover stream for Taylor Swift - Lover vibe
+      audioRef.current = new Audio('https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=lover-piano-instrumental.mp3');
       audioRef.current.loop = true;
-      audioRef.current.volume = 0.4;
+      audioRef.current.volume = 0.5;
     }
 
     if (isPlaying) {
@@ -56,8 +57,8 @@ export function App() {
 
   return (
     <main className="app-container">
-      {/* Background Hearts & Audio Control */}
-      <Background isPlaying={isPlaying} onToggleAudio={toggleAudio} />
+      {/* Background Hearts & Audio Control for Taylor Swift - Lover */}
+      <Background isPlaying={isPlaying} onToggleAudio={toggleAudio} songTitle="Taylor Swift - Lover 🎵" />
 
       {/* Step Progress Dots (for steps 1-4) */}
       {step > 0 && step < 5 && (
