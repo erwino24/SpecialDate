@@ -12,6 +12,12 @@ export interface ActivityOption {
 export const ACTIVITY_OPTIONS: ActivityOption[] = [
   { id: 'cinema', title: 'Cinema & Movie 🎬', emoji: '🎬', image: '/images/cinema.png', desc: 'Popcorn & movie date' },
   { id: 'arcade', title: 'Arcade & Bowling 🕹️', emoji: '🕹️', desc: 'Fun games & ticket prizes' },
+  { id: 'ukay', title: 'Ukay-Ukay Challenge 👗', emoji: '👗', desc: 'Pick funny outfit for each other' },
+  { id: 'grocery', title: 'Grocery Snack Rush 🛒', emoji: '🛒', desc: '5-min secret snack challenge' },
+  { id: 'gokart', title: 'Bumper Cars / Go Kart 🏎️', emoji: '🏎️', desc: 'Friendly crashing competition' },
+  { id: 'blindfold', title: 'Blindfold Art / Makeup 🎨', emoji: '🎨', desc: 'Draw each other with eyes closed' },
+  { id: 'haunted', title: 'Haunted House 👻', emoji: '👻', desc: 'Who screams louder & clings tight' },
+  { id: 'trampoline', title: 'Trampoline Park 🤹', emoji: '🤹', desc: 'Jumping in foam pits like kids' },
   { id: 'sunset', title: 'Sunset Stroll 🌅', emoji: '🌅', desc: 'Special park walk' },
   { id: 'karaoke', title: 'Karaoke / KTV 🎤', emoji: '🎤', desc: 'Singing our favorite songs' },
   { id: 'shopping', title: 'Mall & Shopping 🛍️', emoji: '🛍️', desc: 'Window shopping stroll' },
@@ -42,7 +48,7 @@ export const ActivityStep: React.FC<ActivityStepProps> = ({
         What do you want us to do together? ✨
       </h2>
       <p className="proposal-subtitle" style={{ marginBottom: '1rem' }}>
-        Choose one or more date ideas! Let's make special memories 💖
+        Pick as many fun or funny date ideas as you want! 💖
       </p>
 
       <div className="cards-grid">
