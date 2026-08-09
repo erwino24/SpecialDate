@@ -12,7 +12,10 @@ export interface FoodOption {
 export const FOOD_OPTIONS: FoodOption[] = [
   { id: 'ramen', title: 'Hot Ramen 🍜', emoji: '🍜', image: '/images/ramen.png', desc: 'Warm broth & noodles' },
   { id: 'coffee', title: 'Coffee & Cafe ☕', emoji: '☕', image: '/images/coffee.png', desc: 'Lattes & sweet cakes' },
+  { id: 'sushi', title: 'Sushi & Japanese 🍣', emoji: '🍣', desc: 'Fresh rolls, salmon & tempura' },
+  { id: 'hotpot', title: 'Hotpot / Shabu 🍲', emoji: '🍲', desc: 'Savory broth & beef slices' },
   { id: 'samgyupsal', title: 'Samgyupsal 🥩', emoji: '🥩', desc: 'K-BBQ & unlimited meat' },
+  { id: 'mexican', title: 'Tacos & Mexican 🌮', emoji: '🌮', desc: 'Quesadillas, tacos & chips' },
   { id: 'milktea', title: 'Milk Tea 🧋', emoji: '🧋', desc: 'Sweet boba & pearls' },
   { id: 'streetfood', title: 'Pinoy Street Food 🍢', emoji: '🍢', desc: 'Isaw, kwek-kwek & sauce' },
   { id: 'pizza', title: 'Pizza & Pasta 🍕', emoji: '🍕', desc: 'Cheesy pizza & pasta' },
