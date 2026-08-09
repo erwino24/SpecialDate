@@ -56,8 +56,8 @@ export function App() {
 
   return (
     <main className="app-container">
-      {/* Background Hearts & Audio Control Pill */}
-      <Background isPlaying={isPlaying} onToggleAudio={toggleAudio} songTitle="Taylor Swift - Lover 🎵" />
+      {/* Background Hearts & YouTube Music Player (Taylor Swift - Lover Official Vocals tgVYh94QH8k) */}
+      <Background />
 
       {/* Step Progress Dots (for steps 1-4) */}
       {step > 0 && step < 5 && (
