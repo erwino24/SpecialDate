@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { Background } from './components/Background';
 import { ProposalStep } from './components/ProposalStep';
 import { FoodStep } from './components/FoodStep';
@@ -22,25 +22,6 @@ export function App() {
   const [pickupPreference, setPickupPreference] = useState<string>('pickup');
   const [outfitMood, setOutfitMood] = useState<string>('💖 Matchy Couple Outfits');
   const [customNote, setCustomNote] = useState<string>('');
-
-  // Direct Audio State - Taylor Swift Lover (/audio/lover.mp3)
-  const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-
-  const toggleAudio = () => {
-    if (!audioRef.current) {
-      audioRef.current = new Audio('/audio/lover.mp3');
-      audioRef.current.loop = true;
-      audioRef.current.volume = 0.5;
-    }
-
-    if (isPlaying) {
-      audioRef.current.pause();
-      setIsPlaying(false);
-    } else {
-      audioRef.current.play().then(() => setIsPlaying(true)).catch((err) => console.log('Audio autoplay prevented:', err));
-    }
-  };
 
   const handleToggleFood = (id: string) => {
     setSelectedFoods((prev) =>
