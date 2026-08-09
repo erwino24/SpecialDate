@@ -48,7 +48,7 @@ export const ProposalStep: React.FC<ProposalStepProps> = ({ onAccept }) => {
   };
 
   // Capped scale so button never overlaps card boundaries
-  const yesScale = Math.min(1 + noCount * 0.12, 1.5);
+  const yesScale = Math.min(1 + noCount * 0.08, 1.25);
 
   return (
     <div className="glass-card animate-fade-in" style={{ position: 'relative' }}>
