@@ -11,6 +11,8 @@ export interface ActivityOption {
 
 export const ACTIVITY_OPTIONS: ActivityOption[] = [
   { id: 'cinema', title: 'Cinema & Movie 🎬', emoji: '🎬', image: '/images/cinema.png', desc: 'Popcorn & movie date' },
+  { id: 'beach', title: 'Beach Getaway 🏖️', emoji: '🏖️', desc: 'Ocean breeze, sand & waves' },
+  { id: 'nature', title: 'Nature Trip 🌿', emoji: '🌿', desc: 'Scenic nature walk & views' },
   { id: 'arcade', title: 'Arcade & Bowling 🕹️', emoji: '🕹️', desc: 'Fun games & ticket prizes' },
   { id: 'ukay', title: 'Ukay-Ukay Challenge 👗', emoji: '👗', desc: 'Pick funny outfit for each other' },
   { id: 'grocery', title: 'Grocery Snack Rush 🛒', emoji: '🛒', desc: '5-min secret snack challenge' },
@@ -48,7 +50,7 @@ export const ActivityStep: React.FC<ActivityStepProps> = ({
         What do you want us to do together? ✨
       </h2>
       <p className="proposal-subtitle" style={{ marginBottom: '1rem' }}>
-        Pick as many fun or funny date ideas as you want! 💖
+        Pick as many fun date ideas as you want! 💖
       </p>
 
       <div className="cards-grid">
